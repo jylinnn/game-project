@@ -24,7 +24,7 @@ public class Playercontrols : MonoBehaviour
         XSpeed = 0f;
         YSpeed = 0f;
         ZSpeed = 0f;
-        speed = 0.05f;
+        speed = 0.1f;
     }
 
     // Update is called once per frame
@@ -36,8 +36,8 @@ public class Playercontrols : MonoBehaviour
         XSpeed += speed*moveHorizontal;
         ZSpeed += speed*moveVertical;
 
-        XSpeed *= 0.9f;
-        ZSpeed *= 0.9f;
+        XSpeed *= 0.6f;
+        ZSpeed *= 0.6f;
 
         Vector3 movement = new Vector3(XSpeed+gameObject.transform.position.x, YSpeed+gameObject.transform.position.y, ZSpeed+gameObject.transform.position.z);
         hitbox.MovePosition(movement);
