@@ -17,8 +17,8 @@ public class Playercontrols : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
-        score = 0;
-        scoreText.text = "Score: " + score.ToString();
+        score = 1;
+        scoreText.text = "Level: " + score.ToString();
         hitbox = GetComponent<Rigidbody>();
 
         XSpeed = 0f;
@@ -53,6 +53,6 @@ public class Playercontrols : MonoBehaviour
     }
     void SetScoreText()
     {
-        scoreText.text = "Score: " + score.ToString();
+        scoreText.text = "Level: " + score.ToString();
     }
 }
